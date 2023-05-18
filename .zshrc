@@ -29,5 +29,16 @@ alias gbdel='f() { git branch -D $1 };f'
 alias gb='f() { git checkout -b $1 };f'
 alias gsw='f() { git switch $1 };f'
 alias gch='f() { git checkout $1 };f'
+
+# config aliases
+alias cgd="config diff"
+alias cgs="config status"
+alias cgat="config add -u"
+alias cgc="config commit -m"
+alias cgps="config push"
+alias cgpf="config push --force"
+alias cgpl="config pull"
+alias cqwe='f() { cgat && cgc $1 && cgps };f' 
+
 # opam configuration
 [[ ! -r /home/iscii/.opam/opam-init/init.zsh ]] || source /home/iscii/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
