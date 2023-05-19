@@ -7,6 +7,7 @@ fi
 
 # options
 setopt autocd
+#setopt COMPLETE_ALIASES
 
 # plugins
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
