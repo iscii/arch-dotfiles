@@ -31,7 +31,7 @@ alias gps="git push"
 alias gpf="git push --force"
 alias gpl="git pull"
 alias qwe='f() { gs && ga && gc $1 && gps };f' #single quotes for args bc they are passed as double quote strs 
-alias qqwe='f() { gs && ga && gc "Quick commit" && gps };f'
+alias qqwe='f() { gs && ga && gc "quick commit" && gps };f'
 alias gbdel='f() { git branch -D $1 };f'
 alias gb='f() { git checkout -b $1 };f'
 alias gsw='f() { git switch $1 };f'
@@ -46,7 +46,7 @@ alias cgps="config push"
 alias cgpf="config push --force"
 alias cgpl="config pull"
 alias cqwe='f() { cgs && cgat && cgc $1 && cgps };f' 
-alias qcqwe='f() { cgs && cga && cgc "Quick commit" && cgps };f'
+alias qcqwe='f() { cgs && cgat && cgc "quick commit" && cgps };f'
 
 # opam configuration
 [[ ! -r /home/iscii/.opam/opam-init/init.zsh ]] || source /home/iscii/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
