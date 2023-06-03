@@ -1,5 +1,12 @@
+" Replacing highlighted texts -> visual mode -> highlight -> ctrl + r -> enter
+" replacement -> enter -> y
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
 " Don't try to be vi compatible
 set nocompatible
+
+" Allow mouse scrolling
+:set mouse=a
 
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
@@ -77,6 +84,10 @@ map <leader><space> :let @/=''<cr> " clear search
 inoremap <F1> <ESC>:set invfullscreen<CR>a
 nnoremap <F1> :set invfullscreen<CR>
 vnoremap <F1> :set invfullscreen<CR>
+
+" Remap shift+tab
+nnoremap <S-Tab> <<
+inoremap <S-Tab> <C-d>
 
 " Textmate holdouts
 
