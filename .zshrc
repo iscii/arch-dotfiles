@@ -25,7 +25,7 @@ alias asd="yay -Syu --noconfirm"
 # git aliases
 alias gd="git diff"
 alias gs="git status"
-alias ga="git add ."
+alias ga="git add -A"
 alias gat="git add -u"
 alias gc="git commit -m"
 alias gr="git rev-parse --show-toplevel"
@@ -44,9 +44,9 @@ alias wksp392='f() { cd $(gr)/CS392 && gsw 392 };f'
 alias qwe392='f() { cd $(gr) && gs && gsw 392 && git add CS392/ && gc $1 && gps };f'
 alias qqwe392='f() { cd $(gr) && gs && gsw 392 && git add CS392/ && gc "quick commit 392" && gps };f'
 
-alias wksp496='f() { cd $(gr)/CS496 && gsw 496 };f'
-alias qwe496='f() {cd $(gr)/CS496/SIT-Coursework-PLaF && qwe $1 && gsw 496 && cd $(gr) && git submodule update CS496/SIT-Coursework-PLaF};f'
-alias qqwe496='f() {cd $(gr)/CS496/SIT-Coursework-PLaF && qqwe && gsw 496 && cd $(gr) && git submodule update CS496/SIT-Coursework-PLaF};f'
+alias wksp496='f() { cd $(gr)/CS496/SIT-Coursework-PLaF && gsw 496 };f'
+alias qwe496='f() {cd $(gr)/CS496/SIT-Coursework-PLaF && qwe $1 && gsw 496 && cd $(gr)};f'
+alias qqwe496='f() {cd $(gr)/CS496/SIT-Coursework-PLaF && qqwe && gsw 496 && cd $(gr)};f'
 
 alias wksp546='f() { cd $(gr)/CS546 && gsw 546 };f'
 alias qwe546='f() { cd $(gr) && gs && gsw 546 && git add CS546/ && gc $1 && gps };f'
