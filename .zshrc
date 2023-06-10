@@ -11,8 +11,6 @@ setopt autocd
 
 # plugins
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh # to update: $ git -C ~zsh-autocomplete pull
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -70,3 +68,17 @@ alias qcqwe='f() { cgs && cgat && cgc "quick commit" && cgps };f'
 # opam configuration
 [[ ! -r /home/iscii/.opam/opam-init/init.zsh ]] || source /home/iscii/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd extendedglob
+unsetopt beep nomatch notify
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/iscii/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
